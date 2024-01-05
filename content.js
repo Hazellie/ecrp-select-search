@@ -1,7 +1,9 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const select = document.querySelector("select");
+  const select =
+    document.querySelector("select[name='g']") ||
+    document.querySelector("#search_forum");
 
   if (!select) return;
 
