@@ -2,6 +2,12 @@
     "manifest_version": 3,
     "name": "ECRP Select Search",
     "version": "0.0.1",
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "ecrp-select-search",
+        "strict_min_version": "109.0"
+      }
+    }, 
     "content_scripts": [
         {
           "matches": ["*://gov.eclipse-rp.net/*"],
