@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "browser_specific_settings": {
       "gecko": {
-        "id": "ecrp-select-search",
+        "id": "ecrp_select_search@hazel.me",
         "strict_min_version": "109.0"
       }
     }, 
