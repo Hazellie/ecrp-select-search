@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ECRP Select Search",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "browser_specific_settings": {
       "gecko": {
         "id": "ecrp_select_search@hazel.me",
@@ -11,6 +11,7 @@
     "content_scripts": [
         {
           "matches": ["*://gov.eclipse-rp.net/*"],
+          "exclude_matches": ["https://gov.eclipse-rp.net/ucp.php?i=pm&folder=inbox", "https://gov.eclipse-rp.net/ucp.php?i=pm&mode=view*"],
           "js": ["content.js"],
           "run_at": "document_start"
         }
