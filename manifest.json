@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ECRP Select Search",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "browser_specific_settings": {
       "gecko": {
         "id": "ecrp_select_search@hazel.me",

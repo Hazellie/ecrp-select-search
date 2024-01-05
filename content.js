@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const select =
     document.querySelector("select[name='g']") ||
+    document.querySelector("select[name='to_forum_id']") ||
     document.querySelector("#search_forum");
 
   if (!select) return;
@@ -15,8 +16,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   searchInput.setAttribute("class", "inputbox");
   searchInput.setAttribute(
     "style",
-    `width: ${select.offsetWidth}px; margin-bottom: 1%`
+    `width: ${select.offsetWidth}px; margin-bottom: 1%;`
   );
+  
+  if (document.URL.includes("adm/index.php")) {
+    `width: ${select.offsetWidth}px; margin-bottom: 1%; margin-top: 1%`
+  }
   searchInput.setAttribute("placeholder", "Search...");
   selectParent.insertBefore(searchInput, br);
 
